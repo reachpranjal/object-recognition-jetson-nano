@@ -10,16 +10,16 @@ Execute `$ export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1`
 > `sudo nvpmodel -m 1`
 
 ## OpenCV Error
-`CMake Error at CMakeLists.txt:66 (find_package): \
-Could not find a configuration file for package "OpenCV" that is compatible \
-with requested version "3.0.0". \
-The following configuration files were considered but not accepted: \
-/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake, version: 4.0.0 \
--- Configuring incomplete, errors occurred! \
-See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeOutput.log". \
-See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeError.log".`
+`CMake Error at CMakeLists.txt:66 (find_package): `<br /> 
+`Could not find a configuration file for package "OpenCV" that is compatible `<br />
+`with requested version "3.0.0". `<br />
+`The following configuration files were considered but not accepted:  `<br />
+`/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake, version: 4.0.0  `<br />
+`-- Configuring incomplete, errors occurred!  `<br />
+`See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeOutput.log".  `<br />
+`See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeError.log".`<br />
 
 This is a build problem and hence needs manual change in CMaeLists.txt <br />
-`$ cd jetson-inference &nbsp;
-$ sudo nano tools/trt-console/CMakeLists.txt` <br />
+`$ cd jetson-inference` <br \>
+`$ sudo nano tools/trt-console/CMakeLists.txt` <br />
 Change OpenCV version from `3.0.0` to `4.0.0`
