@@ -21,5 +21,5 @@ Execute `$ export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1`
 
 This is a build problem and hence needs manual change in CMaeLists.txt <br />
 `$ cd jetson-inference` <br \>
-`$ sudo nano tools/trt-console/CMakeLists.txt` <br />
+`$ sudo nano tools/trt-console/CMakeLists.txt` <br \>
 Change OpenCV version from `3.0.0` to `4.0.0`
