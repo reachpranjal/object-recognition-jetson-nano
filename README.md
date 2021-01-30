@@ -1,0 +1,1 @@
+Everything on Jetson Nano
