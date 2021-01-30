@@ -20,6 +20,6 @@ See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeOutput.log". \
 See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeError.log".`
 
 This is a build problem and hence needs manual change in CMaeLists.txt <br />
-`$ cd jetson-inference \
+`$ cd jetson-inference\
 $ sudo nano tools/trt-console/CMakeLists.txt` <br />
 Change OpenCV version from `3.0.0` to `4.0.0`
