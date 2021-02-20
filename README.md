@@ -10,22 +10,23 @@ $ python3 object_detection.py
 
 - To run object recognition in jetson nano:
 ```bash
+$ cd object-recognition-jetson-nano
 $ python3 object_recognition.py
 ```
 
 ## Install Object detection prebuilt models
 
-To install Jetson Inference, Follow [This GitHub Link](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md)
+To install Jetson Inference, [Click here](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md)
 
 ## Fix to possible errors
 
-1. If there is `Segmentation Fault` Error which occurs due to inappropriate power management, \
+1. If there is `Segmentation Fault` Error which occurs due to inappropriate power management, 
 ```bash
 $ sudo install make
 $ sudo ldconfig
 ```
 
-2. To handle `ImportError: /usr/lib/aarch64-linux-gnu/libgomp.so.1: cannot allocate memory in static TLS block`; \
+2. To handle `ImportError: /usr/lib/aarch64-linux-gnu/libgomp.so.1: cannot allocate memory in static TLS block`; 
 ```bash
 $ export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
 ```
@@ -41,9 +42,9 @@ The following configuration files were considered but not accepted:
 See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeOutput.log"  
 See also "/home/nano/jetson-inference/build/CMakeFiles/CMakeError.log"
 ```
--This is a build problem and hence needs manual change in `CMaeLists.txt`
+- This is a build problem and hence needs manual change in `CMakeLists.txt`
 ```bash
 $ cd jetson-inference
 $ sudo nano tools/trt-console/CMakeLists.txt
 ```
-Search for OpenCV version and change from `3.0.0` to `4.0.0`
+And Search for OpenCV version and change from `3.0.0` to `4.0.0`
