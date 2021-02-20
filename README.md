@@ -2,7 +2,7 @@
 
 - To run object detection in jetson nano:
 ```bash
-$ git clone https://github.com/reachpranjal/object-recognition-jetson-nano
+$ git clone https://github.com/reachpranjal/object-recognition-jetson-nano.git
 $ cd object-recognition-jetson-nano
 $ python3 object_detection.py
 ```
